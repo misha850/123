@@ -1145,7 +1145,7 @@ $(document).ready(function() {
 
 		// ----------------------------------------
 		// MAIN JS
-		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/misha850/123/470e99d367677193900f8fe56c8e66004f87c4c7/UE4Game-HTML5-Shipping.js'), 'blob').then(function(data) {
+		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/misha850/123/9b09f05b73952f0a870d50062bf17d37985f57e7/UE4Game-HTML5-Shipping.js'), 'blob').then(function(data) {
 				Module['mainScriptUrlOrBlob'] = data;
 				return addScriptToDom(data).then(function() {
 					addRunDependency('wait-for-compiled-code');
@@ -1154,8 +1154,8 @@ $(document).ready(function() {
 
 		// ----------------------------------------
 		// MORE JS
-		var dataJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/misha850/123/b28fa93a12e6fc3a7788a983bdb5908902885b76/FirstPerson-HTML5-Shipping.data.js'));
-		var utilityJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/misha850/123/529f8457df2ec3171cf21f31e1424fc97ed64c74/Utility.js')).then(addScriptToDom);
+		var dataJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/misha850/123/9b09f05b73952f0a870d50062bf17d37985f57e7/FirstPerson-HTML5-Shipping.data.js'));
+		var utilityJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/misha850/123/9b09f05b73952f0a870d50062bf17d37985f57e7/Utility.js')).then(addScriptToDom);
 		var dataDownload =
 /* // The following code would download and store the .data file as a Blob, which should be more efficient than loading an ArrayBuffer. However that seems to be buggy, so avoid it for now.
 			fetchOrDownloadAndStore(db, Module.locateFile('FirstPerson-HTML5-Shipping.data')).then(function(dataBlob) {
