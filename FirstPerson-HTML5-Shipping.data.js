@@ -149,10 +149,10 @@ Module['FS_createPath']('/FirstPerson/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_C:/Users/mike/Documents/Unreal Projects/FirstPerson/Binaries/HTML5/FirstPerson-HTML5-Shipping.data');
+              Module['removeRunDependency']('https://aimautov.ru/app/FirstPerson-HTML5-Shipping.data');
 
     };
-    Module['addRunDependency']('datafile_C:/Users/mike/Documents/Unreal Projects/FirstPerson/Binaries/HTML5/FirstPerson-HTML5-Shipping.data');
+    Module['addRunDependency']('https://aimautov.ru/app/FirstPerson-HTML5-Shipping.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
